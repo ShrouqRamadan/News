@@ -1,0 +1,67 @@
+:root{
+    --black:black;
+    --white:#fff;
+    --red:#FF0000;
+   }
+@media  screen and (max-width: 1168px) {
+   
+    .img-box{
+        width: 300px;
+        height: 300px;
+       
+    }
+}
+@media  screen and (max-width: 992px) {
+  /* header */
+  .upper-header .logo  h1{
+ font-size: 30px;
+ }
+ /* navbar */
+ header{
+    position: relative;
+ }
+ header nav{
+    background-color: var(--black);
+    position: absolute;
+    width: 100%;
+    left: 0px;
+clip-path: polygon(0 0,100% 0 , 100% 0, 0 0);
+z-index: 999999;
+ }
+ header nav.active{
+clip-path: polygon(0 0,100% 0 , 100% 100%, 0% 100%);
+ }
+ nav ul{
+    flex-direction: column;
+    text-align: center;
+padding-right: 40px;
+}
+nav ul li{
+    margin: 10px 0px!important;
+    
+    background-color: var(--red);
+    width: 100%;
+/* font-size: 20px; */
+}
+nav ul li a:hover{
+    color: var(--white);
+   
+ }
+.menu i{
+    display: block;
+    }
+    .lower-header{
+        display: none;
+    }
+
+}
+
+
+@media  screen and (max-width: 600px) {
+    .upper-header{
+        flex-direction: column;
+
+    }
+
+
+}
